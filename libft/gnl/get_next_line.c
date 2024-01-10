@@ -127,4 +127,22 @@ char	*get_next_line(int fd)
 	}
 	return (line);
 }
+/* # include <fcntl.h>
+#include <stdio.h>
 
+int	main(void) {
+	int fd;
+	char *line;
+
+	fd = open("test.txt", O_RDONLY);
+	if (fd == -1) {
+		perror("Erreur lors de l'ouverture du fichier");
+		return (1);
+	}
+	while ((line = get_next_line(fd)) != NULL) {
+		printf("Ligne lue : %s\n", line);
+		free(line);
+	}
+	close(fd);
+	return (0);
+} */
