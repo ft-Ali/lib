@@ -128,7 +128,7 @@ char	*get_next_line(int fd)
 	return (line);
 }
 
-# include <fcntl.h>
+/* # include <fcntl.h>
 #include <stdio.h>
 
 int	main(void) {
@@ -146,4 +146,4 @@ int	main(void) {
 	}
 	close(fd);
 	return (0);
-} 
+} *\
