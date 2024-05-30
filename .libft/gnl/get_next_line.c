@@ -6,7 +6,7 @@
 /*   By: alsiavos <alsiavos@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/04 11:57:03 by alsiavos          #+#    #+#             */
-/*   Updated: 2024/01/10 15:41:40 by alsiavos         ###   ########.fr       */
+/*   Updated: 2024/01/13 15:11:24 by alsiavos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -127,19 +127,23 @@ char	*get_next_line(int fd)
 	}
 	return (line);
 }
-/* # include <fcntl.h>
+
+/* #include <fcntl.h>
 #include <stdio.h>
 
-int	main(void) {
+int	main(void)
+{
 	int fd;
 	char *line;
 
 	fd = open("test.txt", O_RDONLY);
-	if (fd == -1) {
+	if (fd == -1)
+	{
 		perror("Erreur lors de l'ouverture du fichier");
 		return (1);
 	}
-	while ((line = get_next_line(fd)) != NULL) {
+	while ((line = get_next_line(fd)) != NULL)
+	{
 		printf("Ligne lue : %s\n", line);
 		free(line);
 	}

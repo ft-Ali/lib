@@ -6,7 +6,7 @@
 #    By: alsiavos <alsiavos@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/01/10 16:29:26 by alsiavos          #+#    #+#              #
-#    Updated: 2024/01/10 16:30:51 by alsiavos         ###   ########.fr        #
+#    Updated: 2024/05/13 15:48:23 by alsiavos         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -19,6 +19,7 @@ FLAGS = -Wall -Wextra -Werror
 FILES = 	ft_tolower.c \
 		ft_toupper.c \
 		ft_atoi.c \
+		ft_atol.c \
 		ft_bzero.c \
 		ft_isalnum.c \
 		ft_isalpha.c \
@@ -60,6 +61,9 @@ FILES = 	ft_tolower.c \
 		ft_lstclear.c \
 		ft_lstiter.c \
 		ft_lstmap.c \
+		ft_strcmp.c \
+		ft_free_split.c \
+		ft_putchar.c \
 		\
 		./printf/ft_printf.c \
 		./printf/ft_print_hexa.c \
